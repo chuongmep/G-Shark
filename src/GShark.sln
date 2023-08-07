@@ -7,6 +7,28 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GShark", "GShark\GShark.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GShark.Test.XUnit", "GShark.Test.XUnit\GShark.Test.XUnit.csproj", "{312114FB-CE7D-48E8-90B3-42821580039D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItem", "SolutionItem", "{FDF5832D-58D7-4374-BB23-081A981371C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github", "Github", "{AB39DC7F-3FBB-4073-B3DB-50BAC55450B8}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\pull_request_template.md = ..\.github\pull_request_template.md
+		..\.github\release-drafter.yml = ..\.github\release-drafter.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflow", "Workflow", "{A6E7295F-CA5B-47A1-901C-F2D9B6429F37}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\build-and-test-on-pr.yml = ..\.github\workflows\build-and-test-on-pr.yml
+		..\.github\workflows\build-docs.yml = ..\.github\workflows\build-docs.yml
+		..\.github\workflows\create-release.yml = ..\.github\workflows\create-release.yml
+		..\.github\workflows\publish-on-release.yml = ..\.github\workflows\publish-on-release.yml
+		..\.github\workflows\release-drafter.yml = ..\.github\workflows\release-drafter.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{B6885335-C736-45DC-922A-09E2596269E6}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,5 +67,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4523C912-B1A5-4E81-A10D-1B964F4CA16C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB39DC7F-3FBB-4073-B3DB-50BAC55450B8} = {FDF5832D-58D7-4374-BB23-081A981371C4}
+		{A6E7295F-CA5B-47A1-901C-F2D9B6429F37} = {FDF5832D-58D7-4374-BB23-081A981371C4}
+		{B6885335-C736-45DC-922A-09E2596269E6} = {FDF5832D-58D7-4374-BB23-081A981371C4}
 	EndGlobalSection
 EndGlobal
